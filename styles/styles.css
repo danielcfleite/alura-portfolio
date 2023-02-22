@@ -84,15 +84,28 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  width: 5vw;
 }
 
 #navbar__menu__close i {
-  font-size: 30px;
+  font-size: 1.88rem;
   color: white;
   transition: 0.8s;
 }
 
 #navbar__menu__close:hover {
+  cursor: pointer;
+}
+
+#hideText {
+  transition: 0.5s;
+  opacity: 0.5;
+  font-size: 1rem;
+  width: 10vw;
+  text-align: center;
+}
+
+#hideText:hover {
   cursor: pointer;
 }
 
@@ -113,19 +126,8 @@ body {
 .closed {
   height: 0;
 }
-
-#hideText {
-  transition: 0.5s;
-  opacity: 0.5;
-  width: 5vw;
-  text-align: center;
-}
-
-#hideText:hover {
-  cursor: pointer;
-}
 .navbar__menu__link i {
-  font-size: 30px;
+  font-size: 1.88rem;
   color: white;
 }
 
@@ -138,7 +140,18 @@ body {
 
 /* end of navbar */
 #apresentacao {
-  flex-wrap: wrap;
+  padding: 5% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.apresentacao__imagem {
+  width: 50%;
+}
+
+#apresentacao-about {
   margin: 5% 10%;
   display: flex;
   align-items: center;
@@ -146,14 +159,14 @@ body {
 }
 
 .apresentacao__conteudo {
-  width: 615px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 5vh;
 }
 
 .apresentacao__conteudo__titulo {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: "Krona One", sans-serif;
 }
 
@@ -163,7 +176,7 @@ body {
 
 .apresentacao__conteudo__paragrafo {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .apresentacao__socialmedia__subtitulo {
@@ -184,12 +197,12 @@ body {
   display: flex;
   text-align: center;
   color: #f6f6f6;
-  width: 280px;
+  width: 50%;
   justify-content: center;
   gap: 15px;
   border-radius: 8px;
   border: 2px solid var(--color-3);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   padding: 16px 0;
   text-decoration: none;
@@ -238,4 +251,20 @@ body {
 
 #triggerFooter {
   opacity: 0;
+}
+
+@media (max-width: 1200px) {
+  #apresentacao {
+    flex-direction: column-reverse;
+    padding: 5% 5%;
+  }
+}
+
+.apresentacao__imagem {
+  width: 50%;
+  margin-bottom: 3%;
+}
+
+.apresentacao__conteudo {
+  width: auto;
 }

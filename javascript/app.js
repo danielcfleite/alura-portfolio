@@ -26,13 +26,13 @@ hiddeTrigger.addEventListener("click", () => {
   if (firstclick === false) {
     hideIcon.style.transform = "rotate(180deg)";
     hideText.innerHTML = "Mostrar";
-    content.style.margin = "0% 10%";
+    // content.style.margin = "0% 10%";
     content.style.transition = "0.8s";
     firstclick = true;
   } else {
     hideIcon.style.transform = "rotate(0deg)";
     hideText.innerHTML = "Esconder";
-    content.style.margin = "5% 10%";
+    // content.style.margin = "5% 10%";
     firstclick = false;
   }
 });

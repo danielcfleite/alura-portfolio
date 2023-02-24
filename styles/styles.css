@@ -20,6 +20,20 @@ select,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+.menu__trigger {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.menu__trigger:focus {
+  outline: none !important;
+}
 /* ... */
 
 /* animations */

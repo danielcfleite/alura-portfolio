@@ -70,7 +70,7 @@ a {
   --blue: #008efa;
   --pink: #ff207a;
   --bg: #eeeeee;
-  --white: #fefefe;
+  --white: #3a3a3a;
 }
 
 #navbar {
@@ -217,8 +217,15 @@ a {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  opacity: 0.7;
+  font-size: 1.5rem;
+  color: #f6f6f6;
+  text-decoration: none;
 }
+
+.menu__base:hover {
+  color: #9f9f9f !important;
+}
+
 .menu__item {
   position: absolute;
   width: 1rem;
@@ -228,11 +235,18 @@ a {
   border-radius: 50%;
 
   background-color: var(--white);
-  border: none;
+  border: 2px solid var(--color-3);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.05);
   z-index: -1000;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3f8ff;
+  font-size: 2rem;
+  text-decoration: none;
 }
+
 .menu__item--0 {
   transition: 0.35s ease;
   left: 0.5rem;
@@ -251,17 +265,17 @@ a {
   background-color: var(--pink);
 }
 .item-0 {
-  top: -10rem;
+  top: -40vh;
   left: 0.5rem;
   opacity: 1;
 }
 .item-1 {
-  top: -5rem;
+  top: -30vh;
   left: 0.5rem;
   opacity: 1;
 }
 .item-2 {
-  top: 0;
+  top: -20vh;
   left: 0.5rem;
   opacity: 1;
 }

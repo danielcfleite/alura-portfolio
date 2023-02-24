@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <title>Sobre mim</title>
   </head>
   <body>
     <header class="main-header">
@@ -18,8 +18,9 @@
           <span class="navbar__menu__link" id="button-home"
             ><i class="bi bi-house-fill"></i>Home</span
           >
-          <span class="navbar__menu__link"
-            ><i class="bi bi-person-fill"></i> Sobre mim</span
+          <span class="navbar__menu__link" id="button-about"
+            ><i class="bi bi-person-fill"></i>
+             Sobre mim</a></span
           >
         </div>
       </nav>
@@ -28,11 +29,61 @@
         <span id="hideText">Esconder</span>
       </span>
     </header>
+    <div id="content-wrap">
+    <main id="apresentacao">
+      <section class="apresentacao__conteudo">
+        <h1 class="apresentacao__conteudo__titulo">
+          Eleve seu negócio digital a outro nível
+          <strong class="titulo-destaque"
+            >com um Front-end de qualidade!
+          </strong>
+        </h1>
+        <p class="apresentacao__conteudo__paragrafo">
+          Olá! Sou Daniel Carvalho, desenvolvedor Front-end com especialidade em
+          React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em
+          prática boas ideias. Vamos conversar?
+        </p>
+        <div class="apresentacao__socialmedia">
+          <h3 class="apresentacao__socialmedia__subtitulo">
+            Acesse minhas redes:
+          </h3>
+          <a
+            href="https://www.instagram.com.br"
+            class="apresentacao__socialmedia__media"
+            ><i
+              class="bi bi-instagram apresentacao__socialmedia__media__icon"
+            ></i
+            >Instagram</a
+          >
+          <a
+            href="https://www.github.com"
+            class="apresentacao__socialmedia__media"
+            ><i class="bi bi-github apresentacao__socialmedia__media__icon"></i
+            >Github</a
+          >
+          <a
+            href="https://www.linkedin.com"
+            class="apresentacao__socialmedia__media"
+            ><i
+              class="bi bi-linkedin apresentacao__socialmedia__media__icon"
+            ></i
+            >Linkedin</a
+          >
+        </div>
+      </section>
+      <img
+        src="/assets/img/Rectangle 47.png"
+        alt="Foto de uma mulher escrevendo em um notebook"
+        class="apresentacao__imagem"
+      />
+    </main>
+    <span id="triggerFooter">Lorem Ipsum</span>
+  </div>
     <div class="header__mobile">
       <div class="mobile__menu__main">
         <div class="mobile__menu__main__menu">
           <a href="/index.html"><i class="bi bi-house-fill menu__base"></i></a>
-          <a href="/index.html"></a><i class="bi bi-person-fill menu__base"></i></a>
+          <a href="/about.html"><i class="bi bi-person-fill menu__base"></i></a>
 
           <img
             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIw%0D%0AMDAvc3ZnIj4KCiA8Zz4KICA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+CiAgPHJlY3QgZmlsbD0i%0D%0Abm9uZSIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjQwMiIgd2lkdGg9IjU4MiIgeT0i%0D%0ALTEiIHg9Ii0xIi8+CiA8L2c+CiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHBvbHln%0D%0Ab24gc3Ryb2tlPSIjZmZmZmZmIiBpZD0ic3ZnXzEiIHBvaW50cz0iODAuMiw1MS42IDUxLjQsNTEu%0D%0ANiA1MS40LDIyLjYgNDguOSwyMi42IDQ4LjksNTEuNiAxOS45LDUxLjYgMTkuOSw1NC4xIDQ4Ljks%0D%0ANTQuMSA0OC45LDgzLjEgICA1MS40LDgzLjEgNTEuNCw1NC4xIDgwLjQsNTQuMSA4MC40LDUxLjYg%0D%0AIiBmaWxsPSIjZmZmZmZmIi8+CiA8L2c+Cjwvc3ZnPg=="
@@ -67,6 +118,6 @@
     <footer id="footer" class="footer-scrolled">
       <span>Desenvolvido por Daniel Carvalho</span>
     </footer>
-    <script src="/javascript/about.js"></script>
+    <script src="/javascript/app.js"></script>
   </body>
 </html>

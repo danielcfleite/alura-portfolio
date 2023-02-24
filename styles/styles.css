@@ -12,6 +12,16 @@ body {
   height: 100%;
 }
 
+/* mobile--config */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+/* ... */
+
 /* animations */
 @keyframes iconDown {
   0% {

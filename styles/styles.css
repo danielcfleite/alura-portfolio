@@ -249,19 +249,25 @@ a {
 }
 
 .menu__item--0 {
-  transition: 0.35s ease;
+  transition: 0.5s;
+  top: -40vh;
   left: 0.5rem;
-  bottom: 0;
+  opacity: 0;
+  z-index: 50;
 }
 .menu__item--1 {
-  transition: 0.35s ease 0.1s;
+  transition: 0.5s;
+  top: -40vh;
   left: 0.5rem;
-  bottom: 0;
+  opacity: 0;
+  z-index: 50;
 }
 .menu__item--2 {
-  transition: 0.35s ease 0.2s;
+  transition: 0.5s;
+  top: -40vh;
   left: 0.5rem;
-  bottom: 0;
+  opacity: 0;
+  z-index: 50;
 }
 
 .is-rotate {
@@ -272,16 +278,19 @@ a {
   top: -40vh;
   left: 0.5rem;
   opacity: 1;
+  z-index: 50;
 }
 .item-1 {
   top: -30vh;
   left: 0.5rem;
   opacity: 1;
+  z-index: 50;
 }
 .item-2 {
   top: -20vh;
   left: 0.5rem;
   opacity: 1;
+  z-index: 50;
 }
 /* .... */
 
